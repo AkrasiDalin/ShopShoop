@@ -1,15 +1,22 @@
+import styled from "styled-components";
+
 const NavBar = () => {
     
     return (
-            <ul>
-                <li>Option 1</li>
-                <li>Option 2</li>
-                <li>Option 3</li>
-                <li>Option 4</li>
-                <li>Option 5</li>
-            </ul>
+        <NavBarCSS>
+            <nav className="">
+                NavBar
+            </nav>
+        
+        </NavBarCSS>
     )
+        
 }
 
+const NavBarCSS = styled.div`
+    background-color: red;
+    width: 100%;
+    height: 50px;
+`;
 
 export default NavBar;
