@@ -3,21 +3,27 @@ import styled from "styled-components";
 const SideBar = () => {
     
     return (
-        <SideBarCSS>
-            <ul>
-                <li>Option 1</li>
-                <li>Option 2</li>
-                <li>Option 3</li>
-                <li>Option 4</li>
-                <li>Option 5</li>
-            </ul>
-        </SideBarCSS>
+            <nav className="collapse d-lg-block fixed-left sidebar bg-white col-2 bg bg-danger" style={{minWidth: '150px'}}>
+            <div className="position-sticky">
+                <div className="list-group list-group-flush mx-3 mt-4">
+                    <a
+                        href="#"
+                        className="list-group-item list-group-item-action py-2 ripple active">
+                        <span>Clothes</span>
+                    </a>
+                    <a href="#" className="list-group-item list-group-item-action py-2 ripple">
+                        <span>Footwear</span>
+                    </a>
+                    <a href="#" className="list-group-item list-group-item-action py-2 ripple"
+                    ><span>Accessories</span></a>
+                </div>
+            </div>
+        </nav>
     )
 }
 
 const SideBarCSS = styled.div`
-    background-color: blue;
-    flex: 0 200px;
+
 `;
 
 export default SideBar;

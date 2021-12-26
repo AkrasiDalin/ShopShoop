@@ -13,8 +13,11 @@ function App() {
     <div className="App">
       <Header />
       <NavBar />
-      <SideBar />
-      <Main />
+      <div className='row  row-cols-9'>
+        <SideBar />
+        <Main />
+      </div>
+      
       <Footer />
     </div>
   );
