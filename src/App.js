@@ -10,21 +10,19 @@ import Footer from './components/footer';
 
 function App() {
   return (
-    <AppCSS className="App">
+    <div className="App">
       <Header />
       <NavBar />
       <SideBar />
       <Main />
       <Footer />
-    </AppCSS>
+    </div>
   );
 }
 
 
 const AppCSS = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
 `;
 
 
