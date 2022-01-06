@@ -8,15 +8,17 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const NavBar = () => {
     
     return (
-            <div className="input-group">
-            <div className="form-outline">
-                <input type="search" id="form1" className="form-control" />
-                <label className="form-label" htmlFor="form1">Search</label>
-            </div>
-            <button type="button" className="btn btn-primary">
-            <i className="bi bi-arrow-left-circle-fill"></i>
-            </button>
-            </div>
+        <div className=" w-100">
+            <NavBarCSS className="justify-content-center">
+                <form  className="p-2 col-4 d-block">
+                    
+                    <div className="input-group">
+                        <input type="search" placeholder="What are you looking for?" className="form-control border-0 bg-light"/>
+                        <button type="submit" className="btn btn-link text-primary"><i className="bi bi-search"></i></button>
+                    </div>
+                </form>
+            </NavBarCSS>
+        </div>
         
     )
         
