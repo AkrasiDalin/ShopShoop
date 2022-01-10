@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import NavBar from "./nav-bar";
 
 const Header = () => {
     
     return (
-            <NavBarCSS>
-                Header
-            </NavBarCSS>
+        <NavBarCSS className="fix-top  row row-col-8 justify-content-center">
+            <NavBar />
+        </NavBarCSS>
     )
 }
 
