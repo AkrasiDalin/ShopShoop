@@ -6,7 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 const NavBar = () => {
-    
+
     return (
         <div className=" w-100">
             <NavBarCSS className="justify-content-center">
@@ -21,16 +21,32 @@ const NavBar = () => {
             </form>
             </NavBarCSS>
         </div>
-        
+
     )
-        
+
 }
 
 const NavBarCSS = styled.div`
-    background-color: red;
     width: 100%;
-    height: 50px;
+    height: 100%;
     display: flex;
+
+    .back {
+        position: absolute;
+        width:100%;
+        height: 50px;
+        background-color: rgba(0, 0, 0, .2);
+        z-index: 0;
+    }
+
+    form {
+        z-index: 100;
+
+        input:focus {
+            outline: none;
+            border: none;
+        }
+    }
 `;
 
 export default NavBar;
