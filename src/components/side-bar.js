@@ -3,8 +3,9 @@ import styled from "styled-components";
 const SideBar = () => {
     
     return (
-            <nav className="collapse d-lg-block fixed-left sidebar bg-white col-2 bg bg-danger" style={{minWidth: '150px'}}>
-            <div className="position-sticky">
+        
+            <nav className=" bg-white col-2 " style={{minWidth: '150px'}}>
+            <SideBarCSS>
                 <div className="list-group list-group-flush mx-3 mt-4">
                     <a
                         href="#"
@@ -17,12 +18,15 @@ const SideBar = () => {
                     <a href="#" className="list-group-item list-group-item-action py-2 ripple"
                     ><span>Accessories</span></a>
                 </div>
-            </div>
+            </SideBarCSS>
         </nav>
+        
     )
 }
 
 const SideBarCSS = styled.div`
+    // height: 100px;
+    
 
 `;
 
