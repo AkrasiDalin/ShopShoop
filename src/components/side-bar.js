@@ -5,7 +5,7 @@ const SideBar = () => {
     return (
         
             <nav className=" bg-white col-2 " style={{minWidth: '150px'}}>
-            <SideBarCSS>
+            <SideBarCSS className="sticky-top">
                 <div className="list-group list-group-flush mx-3 mt-4">
                     <a
                         href="#"
@@ -25,7 +25,7 @@ const SideBar = () => {
 }
 
 const SideBarCSS = styled.div`
-    // height: 100px;
+    height: 100px;
     
 
 `;
