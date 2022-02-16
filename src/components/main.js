@@ -56,7 +56,12 @@ const MainCSS = styled.div`
     
         .card-footer a {
             background-color:#edc522;
-            // color: white;
+            
+        }
+
+        .card-footer a:hover {
+            background-color: #ed9a22;
+            color: white;
         }
         
     }
