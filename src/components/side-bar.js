@@ -26,6 +26,10 @@ const SideBar = () => {
 
 const SideBarCSS = styled.div`
     height: 100px;
+
+    a.active {
+        background-image: linear-gradient(to right, #2fcbc4, #3fa9a5);
+    }
     
 
 `;
