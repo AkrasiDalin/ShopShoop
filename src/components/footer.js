@@ -5,15 +5,16 @@ const Footer = () => {
     return (
         <FooterCSS>
             <div>
-                Footer
+                Shop Shoop
             </div>
         </FooterCSS>
     )
 }
 
 const FooterCSS = styled.div`
-    background-color: green;
-    height: 100px;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    height: 50px;
     width: 100%;
 `;
 
